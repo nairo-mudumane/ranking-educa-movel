@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
-export const StyledWelcome = styled.div`
-  width: 100%;
-  height: 100%;
+export const StyledHome = styled.div`
+  .heading {
+    margin: 0.5rem 0;
+  }
 
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-
-  .logo {
-    width: 20rem;
+  .content {
+    margin: 0.5rem 0;
+    margin-top: 2rem;
   }
 `;
 
@@ -27,3 +24,16 @@ export const CarouselItem = styled.main`
     height: 100%;
   }
 `;
+
+export const StyledWelcome = styled.div`
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  .logo {
+    width: 20rem;
+  }
+`;
+
+export const StyledRanking = styled.div``;
