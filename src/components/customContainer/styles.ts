@@ -11,5 +11,5 @@ export const StyledCustomContainer = styled.div<ICustomContainerStyles>`
 
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
-  min-height: 64vh;
+  /* min-height: 64vh; */
 `;

@@ -1,6 +1,10 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { CustomContainer, Head, Layout, Title } from "../../components";
+import { Head, Layout } from "../../components";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Welcome } from "./content";
+import { CarouselItem } from "./styles";
 
 export function Home() {
   return (
@@ -8,11 +12,14 @@ export function Home() {
       <Head />
       <Layout>
         <Container>
-          <Title text="title here" />
-
-          <CustomContainer>
-            <h2>home</h2>
-          </CustomContainer>
+          <Carousel>
+            <CarouselItem>
+              <Welcome />
+            </CarouselItem>
+            <CarouselItem>
+              <p>sdlfkds</p>
+            </CarouselItem>
+          </Carousel>
         </Container>
       </Layout>
     </React.Fragment>
