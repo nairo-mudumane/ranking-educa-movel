@@ -1,19 +1,21 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { StyledHeader } from "./styles";
-import logo from "../../assets/logo-cade.png";
+import logo from "../../assets/logo-educa.png";
 
 export function Header() {
   return (
     <StyledHeader>
-      <header className="header">
-        <Box className="logo">
-          <img src={logo} srcSet={logo} alt="logo" />
-        </Box>
+      <Container>
+        <header className="header">
+          <Box className="logo">
+            <img src={logo} srcSet={logo} alt="logo" />
+          </Box>
 
-        <Box className="title">
-          <Typography variant="h3">Educa Moçambique</Typography>
-        </Box>
-      </header>
+          <Typography variant="h3" className="title">
+            Educa Móvel
+          </Typography>
+        </header>
+      </Container>
     </StyledHeader>
   );
 }
