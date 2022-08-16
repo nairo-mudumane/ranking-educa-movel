@@ -1,5 +1,11 @@
 import React from "react";
+import { Head } from "../../components";
 
 export function Home() {
-  return <div>Home</div>;
+  return (
+    <React.Fragment>
+      <Head />
+      <p>home</p>
+    </React.Fragment>
+  );
 }
