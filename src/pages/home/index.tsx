@@ -1,12 +1,15 @@
 import React from "react";
-import { Head, Layout } from "../../components";
+import { Container } from "@mui/material";
+import { Head, Layout, Title } from "../../components";
 
 export function Home() {
   return (
     <React.Fragment>
       <Head />
       <Layout>
-        <p>home</p>
+        <Container>
+          <Title text="title here" />
+        </Container>
       </Layout>
     </React.Fragment>
   );
