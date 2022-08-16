@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <StyledFooter>
       <Container>
-        <header className="header">
+        <footer className="footer">
           <Box className="logo">
             <img src={logo} srcSet={logo} alt="logo" />
           </Box>
@@ -14,7 +14,7 @@ export function Footer() {
           <Typography variant="h3" className="copyright">
             &copy; Educa Moçambique, 2022
           </Typography>
-        </header>
+        </footer>
       </Container>
     </StyledFooter>
   );

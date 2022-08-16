@@ -110,14 +110,14 @@ export function Ranking() {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell align="left">#</TableCell>
+                  <TableCell align="left">Posição</TableCell>
                   <TableCell align="left">Nome</TableCell>
-                  <TableCell align="left">Pontuacao</TableCell>
+                  <TableCell align="left">Pontuação</TableCell>
                 </TableRow>
               </TableHead>
 
               <TableBody>
-                {ranking.slice(0, 11).map((user, index) => (
+                {ranking.slice(0, 10).map((user, index) => (
                   <TableRow
                     key={user.uid}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}

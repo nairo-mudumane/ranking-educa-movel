@@ -6,7 +6,7 @@ export const StyledFooter = styled.div`
   color: ${globalColors.gray1};
   width: 100%;
 
-  .header {
+  .footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -14,16 +14,16 @@ export const StyledFooter = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    padding: 1.2rem 0;
+    padding: 0.5rem 0;
   }
 
   .logo {
-    width: 6rem;
+    width: 4.6rem;
   }
 
   .copyright {
     font-weight: 500;
-    font-size: 3em;
+    font-size: 1.6em;
   }
 
   @media only screen and (min-width: 2560px) {
@@ -32,11 +32,11 @@ export const StyledFooter = styled.div`
     }
 
     .logo {
-      width: 10rem;
+      width: 8rem;
     }
 
     .copyright {
-      font-size: 4em;
+      font-size: 1.6em;
     }
   }
 

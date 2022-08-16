@@ -8,7 +8,7 @@ export const StyledHome = styled.div`
 
   .content {
     margin: 0.5rem 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .isLoading {
@@ -26,7 +26,7 @@ export const StyledHome = styled.div`
 `;
 
 export const CarouselItem = styled.main`
-  height: 70vh;
+  min-height: 76vh;
   margin: 1rem 0;
   overflow: hidden;
 

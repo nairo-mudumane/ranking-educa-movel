@@ -5,7 +5,7 @@ export const StyledLayout = styled.div`
   background: url(${image}), transparent;
 
   width: 100%;
-  min-height: 76vh;
+  min-height: 80vh;
   position: relative;
 
   .rgba {
