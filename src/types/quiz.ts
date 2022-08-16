@@ -1,7 +1,14 @@
 export interface IRanking {
-  id: string;
   uid: string;
   name: string;
   score: number;
-  date: string;
+  category: string;
+  date?: string;
 }
+
+// category: string;
+// date: string;
+// name: string;
+// score: number;
+// uid: string;
+// userUid: string;

@@ -12,7 +12,7 @@ export function Home() {
     interval: 10000,
     infiniteLoop: true,
     showIndicators: false,
-    autoPlay: true,
+    autoPlay: false,
   } as CarouselProps;
 
   return (

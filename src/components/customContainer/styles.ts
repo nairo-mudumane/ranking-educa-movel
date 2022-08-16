@@ -6,7 +6,7 @@ export const StyledCustomContainer = styled.div<ICustomContainerStyles>`
   background-color: ${(props) =>
     props.bg ? globalColors.white1 : "transparent"};
 
-  box-shadow: 0px -0.5px 6.5px rgba(0, 0, 0, 0.3);
+  ${(props) => props.bg && `box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);`};
   border-radius: 6px;
 
   padding: 0.5rem 1rem;

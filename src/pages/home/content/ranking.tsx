@@ -1,4 +1,16 @@
-import { Alert, Box, CircularProgress, Typography } from "@mui/material";
+import Table from "@mui/material/Table";
+import {
+  Alert,
+  Box,
+  CircularProgress,
+  Paper,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import { CustomContainer, Title } from "../../../components";
 import { getRanking } from "../../../services";
@@ -22,7 +34,7 @@ export function Ranking() {
         </Box>
 
         <Box className="content">
-          <CustomContainer>
+          <CustomContainer bg>
             <Box className="isLoading">
               <CircularProgress color="inherit" />
             </Box>
@@ -54,7 +66,7 @@ export function Ranking() {
         </Box>
 
         <Box className="content">
-          <CustomContainer>
+          <CustomContainer bg>
             <Box className="isLoading">
               <Typography variant="h4" className="error-msg">
                 Nenhum usuário encontrado!
@@ -74,7 +86,7 @@ export function Ranking() {
         </Box>
 
         <Box className="content">
-          <CustomContainer>
+          <CustomContainer bg>
             <Box className="isLoading">
               <Typography variant="h4" className="error-msg">
                 Sem usuários hoje!
@@ -94,12 +106,32 @@ export function Ranking() {
 
       <Box className="content">
         <CustomContainer>
-          <p>
-            Nulla consectetur culpa velit eiusmod nulla qui eu esse laborum esse
-            ut. Consequat sit ea occaecat labore nostrud dolore et eu. Consequat
-            excepteur deserunt esse enim aliquip sit officia nulla et
-            exercitation fugiat magna aliqua eiusmod.
-          </p>
+          <TableContainer component={Paper}>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell align="left">#</TableCell>
+                  <TableCell align="left">Nome</TableCell>
+                  <TableCell align="left">Pontuacao</TableCell>
+                </TableRow>
+              </TableHead>
+
+              <TableBody>
+                {ranking.slice(0, 11).map((user, index) => (
+                  <TableRow
+                    key={user.uid}
+                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  >
+                    <TableCell component="th" scope="row">
+                      {index + 1}
+                    </TableCell>
+                    <TableCell align="left">{user.name}</TableCell>
+                    <TableCell align="left">{user.score}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
         </CustomContainer>
       </Box>
     </StyledRanking>

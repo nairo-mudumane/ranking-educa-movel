@@ -5,5 +5,5 @@ export interface ICustomContainerProps extends IChildren {
 }
 
 export interface ICustomContainerStyles {
-  bg: boolean;
+  bg?: boolean;
 }
