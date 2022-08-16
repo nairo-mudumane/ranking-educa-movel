@@ -1,3 +1,4 @@
+import React from "react";
 import Table from "@mui/material/Table";
 import {
   Alert,
@@ -15,8 +16,15 @@ import { useQuery } from "@tanstack/react-query";
 import { CustomContainer, Title } from "../../../components";
 import { getRanking } from "../../../services";
 import { StyledRanking } from "../styles";
+import { useCarousel } from "../../../hooks";
 
 export function Ranking() {
+  const carousel = useCarousel();
+
+  React.useEffect(() => {
+    carousel.updateInterval(2000);
+  }, []);
+
   const {
     data: ranking,
     isLoading: isLoadingRanking,
