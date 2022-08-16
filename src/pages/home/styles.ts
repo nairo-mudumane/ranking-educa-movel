@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { globalColors } from "../../global";
 
 export const StyledHome = styled.div`
   .heading {
@@ -9,11 +10,24 @@ export const StyledHome = styled.div`
     margin: 0.5rem 0;
     margin-top: 2rem;
   }
+
+  .isLoading {
+    color: ${globalColors.yellow1};
+    min-height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error-msg {
+    font-weight: 400;
+  }
 `;
 
 export const CarouselItem = styled.main`
   width: 100%;
-  min-height: 64vh;
+  height: 70vh;
   margin: 1rem 0;
 
   position: relative;
@@ -36,4 +50,7 @@ export const StyledWelcome = styled.div`
   }
 `;
 
-export const StyledRanking = styled.div``;
+export const StyledRanking = styled.div`
+  width: 100%;
+  height: 100%;
+`;
