@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import { Slider } from "../pages";
+import { Home } from "../pages";
 
 export default function () {
   return (
     <Routes>
-      <Route path="/" element={<Slider />} />
-      <Route path="*" element={<Slider />} />
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 }
