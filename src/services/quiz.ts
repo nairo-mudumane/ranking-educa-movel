@@ -5,7 +5,7 @@ export async function getRanking(): Promise<IRanking[] | undefined> {
   try {
     const ranking = await _baseURL
       .get<IData<IRanking[] | undefined>>(
-        "/ranking?sortByScore=true&todayOnly=false"
+        "/ranking?sortByScore=true&todayOnly=true"
       )
       .then((response) => {
         if (response.data.error) {
