@@ -26,9 +26,9 @@ export const StyledHome = styled.div`
 `;
 
 export const CarouselItem = styled.main`
-  width: 100%;
   height: 70vh;
   margin: 1rem 0;
+  overflow: hidden;
 
   position: relative;
 

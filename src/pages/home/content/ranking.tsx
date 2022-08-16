@@ -50,14 +50,14 @@ export function Ranking() {
     return (
       <StyledRanking>
         <Box className="heading">
-          <Title text="Concurso" />
+          <Title text="Top 10 Quiz Educa Móvel" />
         </Box>
 
         <Box className="content">
           <CustomContainer>
             <Box className="isLoading">
               <Typography variant="h4" className="error-msg">
-                Nenhum usuario encontrado!
+                Nenhum usuário encontrado!
               </Typography>
             </Box>
           </CustomContainer>
@@ -70,14 +70,14 @@ export function Ranking() {
     return (
       <StyledRanking>
         <Box className="heading">
-          <Title text="Concurso" />
+          <Title text="Top 10 Quiz Educa Móvel" />
         </Box>
 
         <Box className="content">
           <CustomContainer>
             <Box className="isLoading">
               <Typography variant="h4" className="error-msg">
-                Sem usuarios hoje!
+                Sem usuários hoje!
               </Typography>
             </Box>
           </CustomContainer>
@@ -89,7 +89,7 @@ export function Ranking() {
   return (
     <StyledRanking>
       <Box className="heading">
-        <Title text="Concurso" />
+        <Title text="Top 10 Quiz Educa Móvel" />
       </Box>
 
       <Box className="content">
