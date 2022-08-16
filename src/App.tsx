@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "./components";
+import { Footer, Header } from "./components";
 import { GlobalStyles } from "./global";
 import AppRoutes from "./routes";
 
@@ -9,6 +9,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <AppRoutes />
+      <Footer />
     </React.Fragment>
   );
 }
