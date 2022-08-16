@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { Head, Layout, Title } from "../../components";
+import { CustomContainer, Head, Layout, Title } from "../../components";
 
 export function Home() {
   return (
@@ -9,6 +9,10 @@ export function Home() {
       <Layout>
         <Container>
           <Title text="title here" />
+
+          <CustomContainer>
+            <h2>home</h2>
+          </CustomContainer>
         </Container>
       </Layout>
     </React.Fragment>
