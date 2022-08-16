@@ -1,5 +1,12 @@
+import React from "react";
+import { GlobalStyles } from "./global";
+
 function App() {
-  return <div>app</div>;
+  return (
+    <React.Fragment>
+      <GlobalStyles />
+    </React.Fragment>
+  );
 }
 
 export default App;
