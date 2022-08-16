@@ -5,14 +5,11 @@ import { Carousel, CarouselProps } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Ranking, Welcome } from "./content";
 import { CarouselItem, StyledHome } from "./styles";
-import { useCarousel } from "../../hooks";
 
 export function Home() {
-  const carousel = useCarousel();
-
   const carouselConfig = {
     showThumbs: false,
-    interval: carousel.interval,
+    interval: 10000,
     infiniteLoop: true,
     showIndicators: false,
     autoPlay: true,
