@@ -4,7 +4,9 @@ import { IData, IRanking } from "../types";
 export async function getRanking(): Promise<IRanking[] | undefined> {
   try {
     const ranking = await _baseURL
-      .get<IData<IRanking[] | undefined>>("/ranking")
+      .get<IData<IRanking[] | undefined>>(
+        "/ranking?sortByScore=true&todayOnly=false"
+      )
       .then((response) => {
         if (response.data.error) {
           throw new Error(response.data.msg || "failed to ranking");
